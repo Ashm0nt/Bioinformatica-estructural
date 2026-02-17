@@ -40,3 +40,14 @@ Foldit es una herramienta educativa y científica que permite comprender de mane
 Como actividad práctica de la sesión, se nos asignó:
 
 **Jugar Foldit**, con el objetivo de explorar de manera interactiva los principios del plegamiento de proteínas y comprender cómo la optimización energética influye en la conformación tridimensional.
+
+
+
+![Ejercicio1](Foldit1.png)
+![Ejercicio2](Foldit2.png)
+![Ejercicio3](Foldit3.png)
+![Ejercicio4](Foldit4.png)
+![Ejercicio5](Foldit5.png)
+![Ejercicio6](Foldit6.png)
+![Ejercicio7](Foldit7.png)
+![Ejercicio8](Foldit8.png)
