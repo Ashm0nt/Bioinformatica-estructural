@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 from __future__ import print_function
 from math import sqrt
@@ -11,13 +11,19 @@ obtenida. """
 __author__  = 'Bruno Contreras-Moreira' 
 
 # 0) parametros del algoritmo: 
-pdb1 = { 'file':'./files/1gd6.pdb', 
-	'align':'KTFTRCGLVHELRKHGFEEN---LMRNWVCLVEHESSRDTSKTNTNR-NGSKDYGLFQIN' +
-	'DRYWCSKGASPG--KDCNVKCSDLLTDDITKAAKCAKKIYKR-HRFDAWYGWKNHCQG--SLPDISSC--' };
+pdb1 = { 'file':'./data/3JWDcif_B.pdb', 
+	'align': "-------------TEKLWVTVYYGVPVWKEATTTLFCASDAKAYDTEVHNVWATHACVPTDPNPQEVVLVNVTENFNMWKNDMVEQMH" +
+	"EDIISLWDQSLKPCVKLTG-GSVITQACPKVSFEPIPIHYCAPA------GFAILKCNN---KTFNGTGPCTNVSTVQCTHGIRPVVS" +
+    "SQLLLNGSLAEEEVVIRSVNFTDNAKTIIVQLNTSVEINCTGAGHCNIARAKWNNTLKQIASK----------LREQFGNNKTIIFKQ" +
+    "S---SGGDPEIVTHWFNC---GGEFFYCNSTQLFNSTW----FGSDTITLPCRIKQIINMWQKVGKAMYAPPISGQIRCSSNITGLLL" +
+    "TRDGGNS---NNESEIFRPGGGDMRDNWRSELYKYKVVKIEPLGVAPT--" };
 
-pdb2 = { 'file':'./files/2nwd.pdb', 
-	'align':'KVFERCELARTLKRLGMDGYRGISLANWMCLAKWESGYNTRATNYNAGDRSTDYGIFQIN' +
-	'SRYWCNDGKTPGAVNACHLSCSALLQDNIADAVACAKRVVRDPQGIRAWVAWRNRCQNRDVRQYVQGCGV' };
+pdb2 = { 'file':'./data/3LQAcif_G.pdb', 
+	'align':"-------------------------------------------------------------------LEN-VIENFNMWKNDMVDQMH" +
+    "QDIISLWDQSLKPCVKLTPNTSTIAQACPKVSFDPIPIHYCAPA------GYAILKCND---KTFNGIGPCNNVSTVQCTHGIKPVVS" +
+    "TQLLLNGSLAEEEVVIRSENISNNVKTIIVHLTESVNITCI-GGHCNINEKAWNETLKKVVEK----------LVKYF-PNKTIEFAP" +
+    "P---VGGDLEITTHSFNC---GGEFFYCNTTKLFNSIH----N---SITLPCRIRQIINMWQEVGRAMYAPPSKGNITCISDITGLLL" +
+    "TRDGGENKTENNDTEIFRPGGGDMKDNWRSELYKYKVVEI----------" };
 	
 # 1) subrutinas
 def lee_coordenadas_PDB(filename):
@@ -30,7 +36,7 @@ def lee_coordenadas_PDB(filename):
 	try:
 		res,prev_resID = '',''
 		for line in pdbfile:
-			if(line[0:3] == 'TER'): break
+			if(line[0:3] == 'END'): break
 			if(line[0:4] != 'ATOM'): continue
 			resID = line[17:26]
 			if(resID != prev_resID):
@@ -70,9 +76,9 @@ def coords_alineadas(align1,coords1,align2,coords2):
 	for r in range(0, length):
 		res1 = align1[r:r+1]
 		res2 = align2[r:r+1]
-		if(res1 != '-'): total1+=1
-		if(res2 != '-'): total2+=1
-		if(res1 == '-' or res2 == '-'): continue #solo  interesan pares alineados
+		if(res1 != "-"): total1+=1
+		if(res2 != "-"): total2+=1
+		if(res1 == "-" or res2 == "-"): continue #solo  interesan pares alineados
 		align_coords1.append(extrae_coords_atomo(coords1[total1],' CA ') )
 		align_coords2.append(extrae_coords_atomo(coords2[total2],' CA ') )
 	return align_coords1, align_coords2
@@ -110,11 +116,11 @@ def calcula_superposicion_SVD(pdbh1,pdbh2,originalPDBname,fittedPDBname,test=Fal
     print("HEADER %s\n" % pdbh1['file'], file=pdbfile)
     for res in (pdbh1['coords']): 
         print(res, file=pdbfile)
-    print("TER\n", file=pdbfile)
+    print("END\n", file=pdbfile)
     print("HEADER %s\n" % pdbh2['file'], file=pdbfile)
     for res in (pdbh2['coords']): 
         print(res, file=pdbfile)
-    print("TER\n", file=pdbfile)
+    print("END\n", file=pdbfile)
     pdbfile.close()	
 	
     ## prepara coordenadas de atomos CA alineados (equivalentes)
@@ -136,7 +142,7 @@ def calcula_superposicion_SVD(pdbh1,pdbh2,originalPDBname,fittedPDBname,test=Fal
         for i in range(0,3): 
             print("mat %f %f %f\n" % (matriz[i][0],matriz[i][1],matriz[i][2]))		
    			
-    ## invoca descomposicion en valores singulares y comprueba matrix/determinante
+    ## invoca descomposicion en valores singulares y comprueba matrix/deENDminante
     [U, Sigma, V] = SVD.svd( matriz )
     if test: 
         for i in range(0,3): print("U %f %f %f\n" % (U[i][0],U[i][1],U[i][2]))
@@ -185,16 +191,32 @@ def calcula_superposicion_SVD(pdbh1,pdbh2,originalPDBname,fittedPDBname,test=Fal
 					
             print("%s%8.3f%8.3f%8.3f%s" % \
                 (atomo[0:30],atcoords[0],atcoords[1],atcoords[2],atomo[54:]), file=pdbfile)	
-    print("TER\n", file=pdbfile)
+    print("END\n", file=pdbfile)
 	
     # pdb de referencia, coordenadas originales (2)
     print("HEADER %s\n" % pdbh2['file'], file=pdbfile)
     for res in (pdbh2['coords']): print(res, file=pdbfile)
-    print("TER\n", file=pdbfile)
+    print("END\n", file=pdbfile)
 	
     pdbfile.close()	
 	
     return sqrt(rmsd)
+
+def calcula_identidad(align1: str, align2: str) -> float:
+    """ Calcula el porcentaje de identidad entre dos alineamientos de secuencia."""
+    if((length := len(align1)) != len(align2)): 
+        print("# calcula_identidad: alineamientos tienen != longitud")
+        return 0.0
+    total,identicos = 0,0
+    for r in range(0, length):
+        res1 = align1[r:r+1]
+        res2 = align2[r:r+1]
+        if res1 == "-" or res2 == "-": # Los gaps no cuentan para el calculo de identidad
+            continue
+        if res1 == res2:
+            identicos+=1
+        total+=1
+    return identicos / total
 					
 
 # 2) programa principal ###################################################
@@ -205,8 +227,9 @@ def main() -> None:
             
     print("# total residuos: pdb1 = %s pdb2 = %s\n" % (len(pdb1['coords']),len(pdb2['coords'])))
 
-    (pdb1['align_coords'],pdb2['align_coords']) = coords_alineadas(pdb1['align'],pdb1['coords'],\
-                            pdb2['align'],pdb2['coords'] )
+    (pdb1['align_coords'],pdb2['align_coords']) = coords_alineadas(
+        pdb1['align'],pdb1['coords'],pdb2['align'],pdb2['coords'] 
+    )
 
     print("# total residuos alineados = %s\n" % (len(pdb1['align_coords'])))
 
@@ -214,6 +237,7 @@ def main() -> None:
 
     print("\n# coordenadas originales = original.pdb\n# superposicion optima:\n") 
     print("# archivo PDB = align_fit.pdb\n# RMSD = %1.2f Angstrom\n" % (rmsd))
+    print(f"# identidad entre ambas secuencias = {calcula_identidad(pdb1['align'], pdb2['align'])*100:.2f}%\n")
 
     return
 
