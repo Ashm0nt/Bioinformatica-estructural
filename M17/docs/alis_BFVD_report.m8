@@ -1,0 +1,102 @@
+100.0000	132	0	no rank	1	root
+100.0000	132	0	superkingdom	10239	  Viruses
+83.3333	110	0	clade	2559587	    Riboviria
+82.5758	109	0	kingdom	2732397	      Pararnavirae
+82.5758	109	0	phylum	2732409	        Artverviricota
+82.5758	109	0	class	2732514	          Revtraviricetes
+82.5758	109	0	order	2169561	            Ortervirales
+82.5758	109	0	family	11632	              Retroviridae
+82.5758	109	0	subfamily	327045	                Orthoretrovirinae
+81.8182	108	0	genus	11646	                  Lentivirus
+59.8485	79	76	species	11676	                    Human immunodeficiency virus 1
+1.5152	2	0	no rank	388795	                      HIV-1 group M
+0.7576	1	1	no rank	505186	                        HIV-1 M:C
+0.7576	1	0	no rank	505187	                        HIV-1 M:CRF
+0.7576	1	1	no rank	1326734	                          HIV-1 M:CRF13_N_ARN_pl_N8_1
+0.7576	1	1	no rank	540993	                      HIV-1 unknown group
+13.6364	18	16	species	11723	                    Simian immunodeficiency virus
+1.5152	2	0	no rank	12830	                      Simian immunodeficiency virus - mnd
+0.7576	1	1	no rank	159122	                        Simian immunodeficiency virus SIV-mnd 2
+0.7576	1	1	no rank	358183	                        Simian immunodeficiency virus SIV-mnd 1
+4.5455	6	6	species	11709	                    Human immunodeficiency virus 2
+0.7576	1	0	clade	11652	                    Primate lentivirus group
+0.7576	1	0	no rank	693660	                      unclassified Primate lentivirus group
+0.7576	1	1	species	57667	                        Simian-Human immunodeficiency virus
+0.7576	1	1	species	11660	                    Caprine arthritis encephalitis virus
+0.7576	1	1	species	11665	                    Equine infectious anemia virus
+0.7576	1	1	species	11673	                    Feline immunodeficiency virus
+0.7576	1	0	species	2169971	                    Visna-maedi virus
+0.7576	1	1	no rank	328330	                      Small ruminant Lentivirus CA-Ireland
+0.7576	1	0	genus	140052	                  Betaretrovirus
+0.7576	1	1	species	11746	                    Jaagsiekte sheep retrovirus
+0.7576	1	0	no rank	2585030	      unclassified Riboviria
+0.7576	1	0	no rank	439490	        unclassified ssRNA viruses
+0.7576	1	0	clade	35278	          unclassified ssRNA positive-strand viruses
+0.7576	1	0	genus	1307798	            Negevirus
+0.7576	1	1	species	2840071	              Bemisia tabaci nege-like virus 1
+12.1212	16	0	clade	2731341	    Duplodnaviria
+12.1212	16	0	kingdom	2731360	      Heunggongvirae
+12.1212	16	0	phylum	2731618	        Uroviricota
+12.1212	16	0	class	2731619	          Caudoviricetes
+6.0606	8	0	no rank	2788787	            unclassified Caudoviricetes
+0.7576	1	1	species	691963	              Rhodococcus phage ReqiPine5
+0.7576	1	1	species	1524880	              Vibrio phage VPp1
+0.7576	1	1	species	1161927	              Pseudomonas phage Lu11
+0.7576	1	1	species	2825131	              Myoviridae sp. ctaMv1
+0.7576	1	1	species	2827668	              Myoviridae sp. ctByu2
+0.7576	1	1	species	2827693	              Myoviridae sp. ctZ2t4
+0.7576	1	1	species	2827710	              Myoviridae sp. ctqfO1
+0.7576	1	1	species	2509726	              Rhizobium phage RHph_I1_18
+0.7576	1	0	family	2946160	            Kyanoviridae
+0.7576	1	0	genus	2733096	              Bellamyvirus
+0.7576	1	0	no rank	2752547	                unclassified Bellamyvirus
+0.7576	1	1	species	2821411	                  Bellamyvirus sp.
+0.7576	1	0	family	2946170	            Straboviridae
+0.7576	1	0	subfamily	2842519	              Twarogvirinae
+0.7576	1	0	no rank	2853023	                unclassified Twarogvirinae
+0.7576	1	1	species	762660	                  Acinetobacter phage Ac42
+0.7576	1	0	genus	2560128	            Eneladusvirus
+0.7576	1	0	species	2560849	              Eneladusvirus Yen904
+0.7576	1	1	no rank	2052743	                Yersinia phage fHe-Yen9-03
+0.7576	1	0	genus	2560176	            Mimasvirus
+0.7576	1	0	species	2560400	              Mimasvirus GAP32
+0.7576	1	1	no rank	1141136	                Cronobacter phage vB_CsaM_GAP32
+0.7576	1	0	subfamily	2946623	            Andrewesvirinae
+0.7576	1	0	genus	2948949	              Vipetofemvirus
+0.7576	1	0	species	2956649	                Vipetofemvirus nattely
+0.7576	1	1	no rank	2719593	                  Enterococcus phage nattely
+0.7576	1	0	no rank	2100420	            environmental samples
+0.7576	1	1	species	2100421	              uncultured Caudovirales phage
+0.7576	1	0	genus	680115	            Phikzvirus
+0.7576	1	1	no rank	1231361	              unclassified Phikzvirus
+0.7576	1	0	genus	2733130	            Salmondvirus
+0.7576	1	0	species	2734142	              Salmondvirus JA29
+0.7576	1	1	no rank	2283031	                Dickeya phage vB_DsoM_JA29
+2.2727	3	0	clade	2732004	    Varidnaviria
+2.2727	3	0	kingdom	2732005	      Bamfordvirae
+2.2727	3	0	phylum	2732007	        Nucleocytoviricota
+2.2727	3	0	class	2732523	          Megaviricetes
+1.5152	2	0	order	2732554	            Imitervirales
+1.5152	2	0	family	549779	              Mimiviridae
+0.7576	1	0	subfamily	1977630	                Klosneuvirinae
+0.7576	1	0	no rank	2788772	                  unclassified Klosneuvirinae
+0.7576	1	1	species	2487770	                    Hyperionvirus sp.
+0.7576	1	0	subfamily	3044648	                Megamimivirinae
+0.7576	1	0	genus	315393	                  Mimivirus
+0.7576	1	0	species	3047343	                    Mimivirus bradfordmassiliense
+0.7576	1	1	no rank	212035	                      Acanthamoeba polyphaga mimivirus
+0.7576	1	0	order	2732524	            Algavirales
+0.7576	1	0	family	10501	              Phycodnaviridae
+0.7576	1	0	genus	181084	                Prasinovirus
+0.7576	1	0	no rank	880158	                  unclassified Prasinovirus
+0.7576	1	1	species	1586713	                    Yellowstone lake phycodnavirus 1
+0.7576	1	0	no rank	12429	    unclassified viruses
+0.7576	1	1	species	1477405	      Faustovirus
+0.7576	1	0	family	2946196	    Polydnaviriformidae
+0.7576	1	0	genus	2946836	      Bracoviriform
+0.7576	1	0	no rank	2959943	        unclassified Bracoviriform
+0.7576	1	1	species	1836595	          Microplitis mediator bracovirus
+0.7576	1	0	class	2840056	    Naldaviricetes
+0.7576	1	0	family	196937	      Nimaviridae
+0.7576	1	0	genus	249585	        Whispovirus
+0.7576	1	1	species	342409	          White spot syndrome virus
