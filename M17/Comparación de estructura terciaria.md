@@ -418,6 +418,7 @@ TM\text{-}score =
 \frac{1}{1 + \left(\frac{d_i}{d_0}\right)^2}
 \right]
 $$
+
 donde:
 
 - **max** es el valor máximo obtenido entre todas las superposiciones evaluadas.
