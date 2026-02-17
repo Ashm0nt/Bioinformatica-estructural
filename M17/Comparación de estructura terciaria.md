@@ -112,9 +112,7 @@ Esta transformación no deforma la estructura; únicamente cambia su posición y
 
 Matemáticamente, se busca minimizar:
 
-\[
-\sum_i \| R A_i + t - B_i \|^2
-\]
+$$ \sum_{i} \| R A_i + t - B_i \|^2 $$
 
 donde:
 
@@ -412,15 +410,14 @@ En lugar de penalizar cuadráticamente la distancia (como en el RMSD), el TM-sco
 
 La fórmula general es:
 
-\[
+$$
 TM\text{-}score =
 \max \left[
 \frac{1}{L_Q}
 \sum_{i=1}^{L_T}
 \frac{1}{1 + \left(\frac{d_i}{d_0}\right)^2}
 \right]
-\]
-
+$$
 donde:
 
 - **max** es el valor máximo obtenido entre todas las superposiciones evaluadas.
