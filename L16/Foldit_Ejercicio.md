@@ -51,3 +51,15 @@ Como actividad práctica de la sesión, se nos asignó:
 ![Ejercicio6](Foldit6.png)
 ![Ejercicio7](Foldit7.png)
 ![Ejercicio8](Foldit8.png)
+
+## Conclusión 
+El ejercicio con **Foldit** permitió comprender de manera práctica los principios fundamentales del plegamiento de proteínas. Al manipular directamente la estructura tridimensional y observar cómo cambia la puntuación energética, se hizo evidente que:
+
+- La conformación nativa corresponde a un estado de **mínima energía**.
+- La formación de un **núcleo hidrofóbico** es clave para la estabilidad.
+- Los **puentes de hidrógeno** estabilizan la estructura secundaria.
+- Los choques estéricos y tensiones geométricas aumentan la energía del sistema.
+
+Además, la actividad ayudó a visualizar cómo pequeños cambios en la conformación pueden afectar significativamente la estabilidad global de la proteína.
+
+En conclusión, Foldit funciona como una herramienta didáctica que refuerza la relación entre **estructura, energía y función**, permitiendo internalizar conceptos teóricos de biología estructural mediante una experiencia interactiva.
