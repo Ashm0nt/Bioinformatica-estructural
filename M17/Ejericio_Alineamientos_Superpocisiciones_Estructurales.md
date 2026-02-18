@@ -90,7 +90,7 @@ El alineamiento presenta un **lDDT promedio de 0.476**. Se pueden observar regio
 ![Alineamiento6](results/Imagenes/Aln6.png)
 
 - **Comparción estructural de los dominios**: La siguiente figura muestra la superposición estructural de los dominios. Pueden consultar de igual manera la superposición en formato pdb en `data/foldmason.pdb`.
-![Superposición](results/Imagenes/Superposición.png)
+![Superposición](results/Imagenes/foldmason.png)
 
 - **Guide Tree**: La siguiente figura muestra el *guide tree* generado durante el alineamiento múltiple estructural. Este árbol refleja las relaciones de similitud estructural entre los dominios analizados, agrupándolos según su grado de conservación. Las ramas más cortas indican estructuras más similares entre sí, mientras que ramas más largas sugieren mayor divergencia estructural. Se observa que algunas estructuras, como 3JWDcif_E y 3LQAcif_G, se agrupan estrechamente, lo que indica una mayor similitud estructural entre ellas. Esto sugiere que comparten un núcleo conformacional altamente conservado, así como 3JWOcif_H y 3JWDcif_H 
 ![Tree](results/Imagenes/Tree.png)
