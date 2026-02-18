@@ -78,22 +78,22 @@ La coloración está basada en la métrica **lDDT (local Distance Difference Tes
 
 El alineamiento presenta un **lDDT promedio de 0.476**. Se pueden observar regiones con un altob grado de conservación en su estrutura local. 
 
-![Resumen](Resumen.png)
+![Resumen](/results/Imagenes/Resumen.png)
 
 - **Alineamiento**: Las siguiente figura muestra el alineamiento de los 19 dominios. Además pueden consular en alineamiento en `data/foldmason_aa.fa`.
   
-![Alineamiento1](Aln1.png)
-![Alineamiento2](Aln2.png)
-![Alineamiento3](Aln3.png)
-![Alineamiento4](Aln4.png)
-![Alineamiento5](Aln5.png)
-![Alineamiento6](Aln6.png)
+![Alineamiento1](results/Imagenes/Aln1.png)
+![Alineamiento2](results/Imagenes/Aln2.png)
+![Alineamiento3](results/Imagenes/Aln3.png)
+![Alineamiento4](results/Imagenes/Aln4.png)
+![Alineamiento5](results/Imagenes/Aln5.png)
+![Alineamiento6](results/Imagenes/Aln6.png)
 
 - **Comparción estructural de los dominios**: La siguiente figura muestra la superposición estructural de los dominios. Pueden consultar de igual manera la superposición en formato pdb en `data/foldmason.pdb`.
-![Superposición](Superposición.png)
+![Superposición](results/Imagenes/Superposición.png)
 
 - **Guide Tree**: La siguiente figura muestra el *guide tree* generado durante el alineamiento múltiple estructural. Este árbol refleja las relaciones de similitud estructural entre los dominios analizados, agrupándolos según su grado de conservación. Las ramas más cortas indican estructuras más similares entre sí, mientras que ramas más largas sugieren mayor divergencia estructural. Se observa que algunas estructuras, como 3JWDcif_E y 3LQAcif_G, se agrupan estrechamente, lo que indica una mayor similitud estructural entre ellas. Esto sugiere que comparten un núcleo conformacional altamente conservado, así como 3JWOcif_H y 3JWDcif_H 
-![Tree](Tree.png)
+![Tree](results/Imagenes/Tree.png)
 
 
 ## Foldseek
