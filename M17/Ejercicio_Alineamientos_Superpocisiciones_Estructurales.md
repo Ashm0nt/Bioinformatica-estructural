@@ -78,7 +78,7 @@ La coloración está basada en la métrica **lDDT (local Distance Difference Tes
 
 El alineamiento presenta un **lDDT promedio de 0.476**. Se pueden observar regiones con un altob grado de conservación en su estrutura local. 
 
-![Resumen](/results/Imagenes/Resumen.png)
+![Resumen](results/Imagenes/Resumen.png)
 
 - **Alineamiento**: Las siguiente figura muestra el alineamiento de los 19 dominios. Además pueden consular en alineamiento en `data/foldmason_aa.fa`.
   
