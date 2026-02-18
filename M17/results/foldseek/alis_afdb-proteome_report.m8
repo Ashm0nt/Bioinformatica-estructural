@@ -1,0 +1,17 @@
+100.0000	1	0	no rank	1	root
+100.0000	1	0	cellular root	131567	  cellular organisms
+100.0000	1	0	domain	2759	    Eukaryota
+100.0000	1	0	clade	33154	      Opisthokonta
+100.0000	1	0	kingdom	33208	        Metazoa
+100.0000	1	0	clade	6072	          Eumetazoa
+100.0000	1	0	clade	33213	            Bilateria
+100.0000	1	0	clade	33317	              Protostomia
+100.0000	1	0	clade	1206794	                Ecdysozoa
+100.0000	1	0	phylum	6231	                  Nematoda
+100.0000	1	0	class	119089	                    Chromadorea
+100.0000	1	0	order	6236	                      Rhabditida
+100.0000	1	0	suborder	6274	                        Spirurina
+100.0000	1	0	superfamily	55872	                          Dracunculoidea
+100.0000	1	0	family	318477	                            Dracunculidae
+100.0000	1	0	genus	318478	                              Dracunculus
+100.0000	1	1	species	318479	                                Dracunculus medinensis

@@ -1,0 +1,47 @@
+100.0000	3	0	no rank	1	root
+100.0000	3	0	cellular root	131567	  cellular organisms
+100.0000	3	0	domain	2759	    Eukaryota
+66.6667	2	0	clade	33154	      Opisthokonta
+66.6667	2	0	kingdom	33208	        Metazoa
+66.6667	2	0	clade	6072	          Eumetazoa
+66.6667	2	0	clade	33213	            Bilateria
+66.6667	2	0	clade	33511	              Deuterostomia
+66.6667	2	0	phylum	7711	                Chordata
+66.6667	2	0	subphylum	89593	                  Craniata
+66.6667	2	0	clade	7742	                    Vertebrata
+66.6667	2	0	clade	7776	                      Gnathostomata
+66.6667	2	0	clade	117570	                        Teleostomi
+66.6667	2	0	clade	117571	                          Euteleostomi
+66.6667	2	0	superclass	8287	                            Sarcopterygii
+66.6667	2	0	clade	1338369	                              Dipnotetrapodomorpha
+66.6667	2	0	clade	32523	                                Tetrapoda
+66.6667	2	0	clade	32524	                                  Amniota
+66.6667	2	0	class	40674	                                    Mammalia
+66.6667	2	0	clade	32525	                                      Theria
+66.6667	2	0	clade	9347	                                        Eutheria
+66.6667	2	0	clade	1437010	                                          Boreoeutheria
+33.3333	1	0	superorder	314145	                                            Laurasiatheria
+33.3333	1	0	order	91561	                                              Artiodactyla
+33.3333	1	0	suborder	9845	                                                Ruminantia
+33.3333	1	0	infraorder	35500	                                                  Pecora
+33.3333	1	0	family	9895	                                                    Bovidae
+33.3333	1	0	subfamily	9963	                                                      Caprinae
+33.3333	1	0	genus	9935	                                                        Ovis
+33.3333	1	1	species	9940	                                                          Ovis aries
+33.3333	1	0	superorder	314146	                                            Euarchontoglires
+33.3333	1	0	order	9443	                                              Primates
+33.3333	1	0	suborder	376913	                                                Haplorrhini
+33.3333	1	0	infraorder	314293	                                                  Simiiformes
+33.3333	1	0	parvorder	9526	                                                    Catarrhini
+33.3333	1	0	superfamily	314295	                                                      Hominoidea
+33.3333	1	0	family	9604	                                                        Hominidae
+33.3333	1	0	subfamily	207598	                                                          Homininae
+33.3333	1	0	genus	9605	                                                            Homo
+33.3333	1	1	species	9606	                                                              Homo sapiens
+33.3333	1	0	clade	2698737	      Sar
+33.3333	1	0	clade	33630	        Alveolata
+33.3333	1	0	class	2864	          Dinophyceae
+33.3333	1	0	order	89954	            Suessiales
+33.3333	1	0	family	252141	              Symbiodiniaceae
+33.3333	1	0	genus	2486696	                Cladocopium
+33.3333	1	1	species	2562237	                  Cladocopium goreaui

@@ -1,0 +1,72 @@
+100.0000	8	0	no rank	1	root
+50.0000	4	0	superkingdom	10239	  Viruses
+50.0000	4	0	clade	2559587	    Riboviria
+50.0000	4	0	kingdom	2732397	      Pararnavirae
+50.0000	4	0	phylum	2732409	        Artverviricota
+50.0000	4	0	class	2732514	          Revtraviricetes
+50.0000	4	0	order	2169561	            Ortervirales
+50.0000	4	0	family	11632	              Retroviridae
+50.0000	4	0	subfamily	327045	                Orthoretrovirinae
+50.0000	4	0	genus	11646	                  Lentivirus
+37.5000	3	2	species	11676	                    Human immunodeficiency virus 1
+12.5000	1	0	no rank	540993	                      HIV-1 unknown group
+12.5000	1	1	no rank	362651	                        Human immunodeficiency virus type 1 (isolate YU2)
+12.5000	1	1	species	11723	                    Simian immunodeficiency virus
+50.0000	4	0	no rank	131567	  cellular organisms
+25.0000	2	0	superkingdom	2	    Bacteria
+25.0000	2	0	phylum	1224	      Pseudomonadota
+12.5000	1	0	class	1236	        Gammaproteobacteria
+12.5000	1	0	order	2887326	          Moraxellales
+12.5000	1	0	family	468	            Moraxellaceae
+12.5000	1	0	genus	469	              Acinetobacter
+12.5000	1	0	species group	909768	                Acinetobacter calcoaceticus/baumannii complex
+12.5000	1	1	species	470	                  Acinetobacter baumannii
+12.5000	1	0	class	28211	        Alphaproteobacteria
+12.5000	1	0	order	356	          Hyphomicrobiales
+12.5000	1	0	family	118882	            Brucellaceae
+12.5000	1	0	no rank	2826938	              Brucella/Ochrobactrum group
+12.5000	1	0	genus	234	                Brucella
+12.5000	1	0	species	29461	                  Brucella suis
+12.5000	1	1	strain	204722	                    Brucella suis 1330
+25.0000	2	0	superkingdom	2759	    Eukaryota
+25.0000	2	0	clade	33154	      Opisthokonta
+12.5000	1	0	kingdom	4751	        Fungi
+12.5000	1	0	subkingdom	451864	          Dikarya
+12.5000	1	0	phylum	4890	            Ascomycota
+12.5000	1	0	clade	716545	              saccharomyceta
+12.5000	1	0	subphylum	147537	                Saccharomycotina
+12.5000	1	0	class	4891	                  Saccharomycetes
+12.5000	1	0	order	4892	                    Saccharomycetales
+12.5000	1	0	clade	2916678	                      CUG-Ser1 clade
+12.5000	1	0	family	766764	                        Debaryomycetaceae
+12.5000	1	0	clade	1535325	                          Candida/Lodderomyces clade
+12.5000	1	0	genus	5475	                            Candida
+12.5000	1	1	species	5476	                              Candida albicans
+12.5000	1	0	kingdom	33208	        Metazoa
+12.5000	1	0	clade	6072	          Eumetazoa
+12.5000	1	0	clade	33213	            Bilateria
+12.5000	1	0	clade	33511	              Deuterostomia
+12.5000	1	0	phylum	7711	                Chordata
+12.5000	1	0	subphylum	89593	                  Craniata
+12.5000	1	0	clade	7742	                    Vertebrata
+12.5000	1	0	clade	7776	                      Gnathostomata
+12.5000	1	0	clade	117570	                        Teleostomi
+12.5000	1	0	clade	117571	                          Euteleostomi
+12.5000	1	0	superclass	8287	                            Sarcopterygii
+12.5000	1	0	clade	1338369	                              Dipnotetrapodomorpha
+12.5000	1	0	clade	32523	                                Tetrapoda
+12.5000	1	0	clade	32524	                                  Amniota
+12.5000	1	0	class	40674	                                    Mammalia
+12.5000	1	0	clade	32525	                                      Theria
+12.5000	1	0	clade	9347	                                        Eutheria
+12.5000	1	0	clade	1437010	                                          Boreoeutheria
+12.5000	1	0	superorder	314146	                                            Euarchontoglires
+12.5000	1	0	order	9443	                                              Primates
+12.5000	1	0	suborder	376913	                                                Haplorrhini
+12.5000	1	0	infraorder	314293	                                                  Simiiformes
+12.5000	1	0	parvorder	9526	                                                    Catarrhini
+12.5000	1	0	superfamily	314295	                                                      Hominoidea
+12.5000	1	0	family	9604	                                                        Hominidae
+12.5000	1	0	subfamily	207598	                                                          Homininae
+12.5000	1	0	genus	9605	                                                            Homo
+12.5000	1	1	species	9606	                                                              Homo sapiens

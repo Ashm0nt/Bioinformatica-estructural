@@ -1,0 +1,32 @@
+50.0000	1	0	no rank	1	root
+50.0000	1	0	no rank	131567	  cellular organisms
+50.0000	1	0	superkingdom	2759	    Eukaryota
+50.0000	1	0	clade	33154	      Opisthokonta
+50.0000	1	0	kingdom	33208	        Metazoa
+50.0000	1	0	clade	6072	          Eumetazoa
+50.0000	1	0	clade	33213	            Bilateria
+50.0000	1	0	clade	33511	              Deuterostomia
+50.0000	1	0	phylum	7711	                Chordata
+50.0000	1	0	subphylum	89593	                  Craniata
+50.0000	1	0	clade	7742	                    Vertebrata
+50.0000	1	0	clade	7776	                      Gnathostomata
+50.0000	1	0	clade	117570	                        Teleostomi
+50.0000	1	0	clade	117571	                          Euteleostomi
+50.0000	1	0	superclass	8287	                            Sarcopterygii
+50.0000	1	0	clade	1338369	                              Dipnotetrapodomorpha
+50.0000	1	0	clade	32523	                                Tetrapoda
+50.0000	1	0	clade	32524	                                  Amniota
+50.0000	1	0	class	40674	                                    Mammalia
+50.0000	1	0	clade	32525	                                      Theria
+50.0000	1	0	clade	9347	                                        Eutheria
+50.0000	1	0	clade	1437010	                                          Boreoeutheria
+50.0000	1	0	superorder	314146	                                            Euarchontoglires
+50.0000	1	0	order	9443	                                              Primates
+50.0000	1	0	suborder	376913	                                                Haplorrhini
+50.0000	1	0	infraorder	314293	                                                  Simiiformes
+50.0000	1	0	parvorder	9526	                                                    Catarrhini
+50.0000	1	0	superfamily	314295	                                                      Hominoidea
+50.0000	1	0	family	9604	                                                        Hominidae
+50.0000	1	0	subfamily	207598	                                                          Homininae
+50.0000	1	0	genus	9605	                                                            Homo
+50.0000	1	1	species	9606	                                                              Homo sapiens

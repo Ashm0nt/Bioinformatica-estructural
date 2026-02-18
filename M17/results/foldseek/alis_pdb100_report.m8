@@ -1,0 +1,62 @@
+100.0000	483	0	no rank	1	root
+97.1014	469	0	superkingdom	10239	  Viruses
+97.1014	469	0	clade	2559587	    Riboviria
+97.1014	469	0	kingdom	2732397	      Pararnavirae
+97.1014	469	0	phylum	2732409	        Artverviricota
+97.1014	469	0	class	2732514	          Revtraviricetes
+97.1014	469	0	order	2169561	            Ortervirales
+97.1014	469	0	family	11632	              Retroviridae
+97.1014	469	0	subfamily	327045	                Orthoretrovirinae
+97.1014	469	0	genus	11646	                  Lentivirus
+93.1677	450	426	species	11676	                    Human immunodeficiency virus 1
+4.3478	21	1	no rank	540993	                      HIV-1 unknown group
+3.1056	15	15	no rank	587638	                        HIV-1 06TG.HT008
+0.6211	3	3	no rank	362651	                        Human immunodeficiency virus type 1 (isolate YU2)
+0.4141	2	2	no rank	11688	                        Human immunodeficiency virus type 1 (JRCSF ISOLATE)
+0.6211	3	0	no rank	388795	                      HIV-1 group M
+0.6211	3	0	no rank	505185	                        HIV-1 M:B
+0.6211	3	3	no rank	11706	                          HIV-1 M:B_HXB2R
+2.2774	11	0	clade	11652	                    Primate lentivirus group
+2.2774	11	0	no rank	693660	                      unclassified Primate lentivirus group
+2.2774	11	11	species	12721	                        Human immunodeficiency virus
+1.4493	7	7	species	11723	                    Simian immunodeficiency virus
+0.2070	1	0	species	11709	                    Human immunodeficiency virus 2
+0.2070	1	0	no rank	388908	                      HIV-2 subtype A
+0.2070	1	1	no rank	11721	                        Human immunodeficiency virus type 2 (ISOLATE ST)
+2.2774	11	0	no rank	131567	  cellular organisms
+2.2774	11	0	superkingdom	2759	    Eukaryota
+2.2774	11	0	clade	33154	      Opisthokonta
+2.2774	11	0	kingdom	33208	        Metazoa
+2.2774	11	0	clade	6072	          Eumetazoa
+2.2774	11	0	clade	33213	            Bilateria
+2.2774	11	0	clade	33511	              Deuterostomia
+2.2774	11	0	phylum	7711	                Chordata
+2.2774	11	0	subphylum	89593	                  Craniata
+2.2774	11	0	clade	7742	                    Vertebrata
+2.2774	11	0	clade	7776	                      Gnathostomata
+2.2774	11	0	clade	117570	                        Teleostomi
+2.2774	11	0	clade	117571	                          Euteleostomi
+2.2774	11	0	superclass	8287	                            Sarcopterygii
+2.2774	11	0	clade	1338369	                              Dipnotetrapodomorpha
+2.2774	11	0	clade	32523	                                Tetrapoda
+2.2774	11	0	clade	32524	                                  Amniota
+2.2774	11	0	class	40674	                                    Mammalia
+2.2774	11	0	clade	32525	                                      Theria
+2.2774	11	0	clade	9347	                                        Eutheria
+2.2774	11	0	clade	1437010	                                          Boreoeutheria
+2.2774	11	0	superorder	314146	                                            Euarchontoglires
+2.2774	11	0	order	9443	                                              Primates
+2.2774	11	0	suborder	376913	                                                Haplorrhini
+2.2774	11	0	infraorder	314293	                                                  Simiiformes
+2.2774	11	0	parvorder	9526	                                                    Catarrhini
+2.2774	11	0	superfamily	314295	                                                      Hominoidea
+2.2774	11	0	family	9604	                                                        Hominidae
+2.2774	11	0	subfamily	207598	                                                          Homininae
+2.2774	11	0	genus	9605	                                                            Homo
+2.2774	11	11	species	9606	                                                              Homo sapiens
+0.6211	3	0	no rank	2787854	  other entries
+0.6211	3	0	no rank	28384	    other sequences
+0.6211	3	0	no rank	81077	      artificial sequences
+0.4141	2	0	no rank	29278	        vectors
+0.4141	2	2	species	672471	          HIV whole-genome vector AA1305#18
+0.2070	1	1	species	32630	        synthetic construct
