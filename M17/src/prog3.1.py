@@ -1,30 +1,48 @@
 #!/usr/bin/env python3
 
 from __future__ import print_function
+from typing import Dict
 from math import sqrt
 import SVD
+import sys
+import os
 
 """ prog3.1 Calcula la superposicion en 3D equivalente a un alineamiento de 
 secuencia de dos proteinas del PDB. Genera un fichero PDB con la superposicion 
 obtenida. """
 
-__author__  = 'Bruno Contreras-Moreira' 
+__author__  = 'Bruno Contreras-Moreira'
+
+def generar_diccionarios(pdb_file: str, fasta_file: str) -> Dict[str, str]:
+    if not os.path.isfile(fasta_file):
+        print(f"Archivo {fasta_file} no encontrado.")
+        return {}
+    
+    key = "align"
+    diccionario = {"file": pdb_file}
+    diccionario[key] = ""
+    file_name = os.path.splitext(os.path.basename(pdb_file))[0]
+
+    with open(fasta_file, "r") as f:
+        for line in f:
+            if line.startswith(">") and file_name in line:
+                next_line = next(f, None)
+                diccionario[key] += next_line.strip()
+                break
+
+    return diccionario
 
 # 0) parametros del algoritmo: 
-pdb1 = { 'file':'./data/3JWDcif_B.pdb', 
-	'align': "-------------TEKLWVTVYYGVPVWKEATTTLFCASDAKAYDTEVHNVWATHACVPTDPNPQEVVLVNVTENFNMWKNDMVEQMH" +
-	"EDIISLWDQSLKPCVKLTG-GSVITQACPKVSFEPIPIHYCAPA------GFAILKCNN---KTFNGTGPCTNVSTVQCTHGIRPVVS" +
-    "SQLLLNGSLAEEEVVIRSVNFTDNAKTIIVQLNTSVEINCTGAGHCNIARAKWNNTLKQIASK----------LREQFGNNKTIIFKQ" +
-    "S---SGGDPEIVTHWFNC---GGEFFYCNSTQLFNSTW----FGSDTITLPCRIKQIINMWQKVGKAMYAPPISGQIRCSSNITGLLL" +
-    "TRDGGNS---NNESEIFRPGGGDMRDNWRSELYKYKVVKIEPLGVAPT--" };
+pdb1 = generar_diccionarios(
+    sys.argv[1], # PDB_1
+    sys.argv[2] # FASTA
+)
 
-pdb2 = { 'file':'./data/3LQAcif_G.pdb', 
-	'align':"-------------------------------------------------------------------LEN-VIENFNMWKNDMVDQMH" +
-    "QDIISLWDQSLKPCVKLTPNTSTIAQACPKVSFDPIPIHYCAPA------GYAILKCND---KTFNGIGPCNNVSTVQCTHGIKPVVS" +
-    "TQLLLNGSLAEEEVVIRSENISNNVKTIIVHLTESVNITCI-GGHCNINEKAWNETLKKVVEK----------LVKYF-PNKTIEFAP" +
-    "P---VGGDLEITTHSFNC---GGEFFYCNTTKLFNSIH----N---SITLPCRIRQIINMWQEVGRAMYAPPSKGNITCISDITGLLL" +
-    "TRDGGENKTENNDTEIFRPGGGDMKDNWRSELYKYKVVEI----------" };
-	
+pdb2 = generar_diccionarios(
+    sys.argv[3], # PDB_2
+    sys.argv[4] # FASTA
+)
+
 # 1) subrutinas
 def lee_coordenadas_PDB(filename):
 	""" Devuelve una lista de residuos, cada uno con las coordenadas de sus atomos. 
@@ -142,8 +160,8 @@ def calcula_superposicion_SVD(pdbh1,pdbh2,originalPDBname,fittedPDBname,test=Fal
         for i in range(0,3): 
             print("mat %f %f %f\n" % (matriz[i][0],matriz[i][1],matriz[i][2]))		
    			
-    ## invoca descomposicion en valores singulares y comprueba matrix/deENDminante
-    [U, Sigma, V] = SVD.svd( matriz )
+    ## invoca descomposicion en valores singulares y comprueba matrix/determinante
+    [U, Sigma, V] = SVD.svd(matriz)
     if test: 
         for i in range(0,3): print("U %f %f %f\n" % (U[i][0],U[i][1],U[i][2]))
         for i in range(0,3): print("Vt %f %f %f\n" % (V[i][0],V[i][1],V[i][2]))
@@ -168,8 +186,10 @@ def calcula_superposicion_SVD(pdbh1,pdbh2,originalPDBname,fittedPDBname,test=Fal
     # pdb superpuesto, coordenadas rotadas (1)
     print("HEADER %s (rotated)\n" % pdbh1['file'], file=pdbfile)
     print("REMARK Rotation matrix:\n", file=pdbfile)
-    for i in range(0,3): print("REMARK %f %f %f\n" % \
-				(rotacion[i][0],rotacion[i][1],rotacion[i][2]), file=pdbfile)
+    for i in range(0,3): print(
+        "REMARK %f %f %f\n" % (rotacion[i][0],rotacion[i][1],rotacion[i][2]),
+        file=pdbfile
+    )
     print("REMARK centroid: %f %f %f\n" % (centro1[0],centro1[1],centro1[2]), file=pdbfile)
     print("REMARK partner centroid: %f %f %f\n" % \
 		(centro2[0],centro2[1],centro2[2]), file=pdbfile)
@@ -231,9 +251,15 @@ def main() -> None:
         pdb1['align'],pdb1['coords'],pdb2['align'],pdb2['coords'] 
     )
 
+    pdb1_name = os.path.splitext(os.path.basename(pdb1['file']))[0]
+    pdb2_name = os.path.splitext(os.path.basename(pdb2['file']))[0]
+
+    original = os.path.join(sys.argv[5], f"{pdb1_name}-{pdb2_name}_original.pdb")
+    align_fit = os.path.join(sys.argv[5], f"{pdb1_name}-{pdb2_name}_align_fit.pdb")
+
     print("# total residuos alineados = %s\n" % (len(pdb1['align_coords'])))
 
-    rmsd = calcula_superposicion_SVD(pdb2,pdb1,'original.pdb','align_fit.pdb')
+    rmsd = calcula_superposicion_SVD(pdb2,pdb1,original,align_fit)
 
     print("\n# coordenadas originales = original.pdb\n# superposicion optima:\n") 
     print("# archivo PDB = align_fit.pdb\n# RMSD = %1.2f Angstrom\n" % (rmsd))
