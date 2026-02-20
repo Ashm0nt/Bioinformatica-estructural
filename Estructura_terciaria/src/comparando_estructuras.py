@@ -64,7 +64,7 @@ def main():
                 table[row, k] = results[k]
             row += 1
 
-    pd.DataFrame(table, columns=columns, index=column_names).to_csv(outfile, sep=",", index=True)
+    pd.DataFrame(table, columns=columns, index=column_names).sort_values(by="RMSD", ascending=True).to_csv(outfile, sep=",", index=True)
     print(f"Comparison completed. Results saved at: {outfile}\n")
 
     return
