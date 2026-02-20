@@ -273,6 +273,7 @@ def core(pdb1_file: str, pdb2_file: str, fasta_file: str, out_dir: str, imprimir
 
     salida.append(len(pdb1['align_coords']))
     salida.append(calcula_superposicion_SVD(pdb2,pdb1,original,align_fit))
+    salida.append(calcula_identidad(pdb1['align'], pdb2['align'])*100)
 
     if not imprimir_resultados:
         return salida
@@ -281,7 +282,6 @@ def core(pdb1_file: str, pdb2_file: str, fasta_file: str, out_dir: str, imprimir
     print("# total residuos alineados = %s\n" % (salida[2]))
     print("\n# coordenadas originales = original.pdb\n# superposicion optima:\n") 
     print("# archivo PDB = align_fit.pdb\n# RMSD = %1.2f Angstrom\n" % (salida[3]))
-    salida.append(calcula_identidad(pdb1['align'], pdb2['align'])*100)
     print(f"# identidad entre ambas secuencias = {salida[4]:.2f}%\n")
 
     return salida
