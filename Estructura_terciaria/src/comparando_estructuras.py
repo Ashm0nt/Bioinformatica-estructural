@@ -57,12 +57,15 @@ def main():
             results = np.array(core(pdb_file_1, pdb_file_2, fasta, os.path.dirname(outfile), ""))
             name = f"{os.path.splitext(os.path.basename(pdb_file_1))[0]}_{os.path.splitext(os.path.basename(pdb_file_2))[0]}"
             column_names.append(name)
+            print(f"Results: {results}\n")
+            print("-" * 50)
             
             for k in range(number_columns):
                 table[row, k] = results[k]
             row += 1
 
     pd.DataFrame(table, columns=columns, index=column_names).to_csv(outfile, sep=",", index=True)
+    print(f"Comparison completed. Results saved at: {outfile}\n")
 
     return
 
